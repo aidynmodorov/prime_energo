@@ -1,0 +1,281 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+
+	.top
+		font-size: 18px
+
+	.top-line
+		&.sticky
+			.top-contacts
+				width: auto
+
+	.top-contacts
+		width: 210px
+		.button
+			margin-top: 5px
+
+	.header-title h1
+		font-size: 56px
+
+	.header-form
+		padding: 35px 20px
+
+	.header-form h2
+		font-size: 28px
+
+	.header-form p
+		font-size: 23px
+
+	.header-form form
+		margin-top: 3px0
+
+	.form-input
+		margin-bottom: 25px
+
+	.header-list
+		ul li
+			font-size: 20px
+
+//Medium: ≥768px
++media-breakpoint-down(md)
+
+	.top-menu
+		display: none
+
+	.top-line
+		&.sticky
+			position: absolute
+			width: 100%
+			top: 0
+			left: 0
+			background: transparent
+			transition: all 0.5s ease
+			.top
+				padding-top: 25px
+				align-items: flex-start
+				.top-logo
+					display: block
+
+	.top-contacts
+		width: auto
+
+	.header-title h1
+		font-size: 45px
+
+	.header-form h2
+		font-size: 26px
+
+	.header-form p
+		font-size: 21px
+
+	.form-main .button
+		font-size: 15px
+
+	.section-title h2
+		font-size: 44px
+
+	.support-item-title h3
+		font-size: 30px
+
+	.support-item, .support-item:nth-child(even)
+		flex-direction: column-reverse
+
+	.support-item:nth-child(even)
+		.support-item-title span
+			top: -41px
+			right: auto
+			left: -27px
+
+	.support-item-img
+		text-align: center
+
+	.objects-content
+		padding: 0
+
+	.projects-slider-item
+		span
+			font-size: 18px
+		p
+			font-size: 16px
+
+	.slick-slide
+		opacity: 0
+
+	.slick-active
+		opacity: 1
+
+	.slider-btn-prev
+		left: -20px
+
+	.slider-btn-next
+		right: -10px
+
+	.projects-slider
+		margin-top: 80px
+
+	.footer-logo
+		margin-top: 40px
+
+	.panel-bottom
+		display: flex
+
+	.up
+		bottom: 50px
+
+//Small: ≥576px
++media-breakpoint-down(sm)
+
+	.header-form
+		display: block
+		margin: 20px auto 0
+		max-width: 300px
+
+	.form-main .button
+		font-size: 16px
+
+	.s
+		&-support, &-objects, &-projects, &-contacts, &-advantages
+			padding: 75px 0
+		&-objects
+			padding-bottom: 35px
+		&-projects
+			pb
+		&-contacts
+			padding-bottom: 45px
+
+	.section-title
+		padding-left: 0
+		h2
+			font-size: 38px
+
+	.support-item-title h3
+		font-size: 28px
+
+	.support-item-list
+		font-size: 20px
+
+	.support>.button
+		width: auto
+		height: auto
+		padding: 10px 25px
+		font-size: 20px
+
+	.advantages-item p
+		font-size: 20px
+
+	.contacts-content
+		padding: 0
+		margin-top: 40px
+		p
+			font-size: 20px
+			margin-bottom: 30px
+
+	.footer-content p
+		font-size: 18px
+
+//Extra small: >0
++media-breakpoint-down(xs)
+
+	.top-logo
+		img
+			width: 90px
+
+	.top-contacts a:first-child
+		font-size: 16px
+
+	.top-contacts
+		> .button
+			padding: 3px 22px
+	
+	.header-content
+		padding-top: 170px
+
+	.header-title h1
+		font-size: 36px
+
+	.s
+		&-support, &-objects, &-projects, &-contacts, &-advantages
+			padding: 60px 0
+		&-contacts
+			padding-bottom: 30px
+
+	.section-title
+		padding-left: 0
+		h2
+			font-size: 34px
+
+	.support-item-img
+		img
+			width: auto
+			max-width: 100%
+
+	.support-item-title h3
+		font-size: 24px
+
+	.support-item-list
+		font-size: 18px
+		ul
+			padding-left: 30px
+
+	.support-item-list ul li::before
+		left: -25px
+
+	.support>.button
+		width: 290px
+		height: 60px
+		line-height: 1
+
+	.objects-content-item
+		margin-bottom: 20px
+		span
+			font-size: 20px
+
+	.projects-slider-item
+		margin: 0
+
+	.advantages-item
+		margin-bottom: 50px
+		img
+			max-width: 90px
+
+	.footer-content
+		text-align: center
+		margin-bottom: 20px
+
+	.footer-logo
+		margin-bottom: 20px
+		margin-top: 0
+		img
+			max-width: 200px
+
+	.contacts-content p
+		font-size: 18px
+
+	.policy-modal, .callback
+		padding: 40px 20px
+
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)
